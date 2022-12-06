@@ -10,12 +10,12 @@ export default class News extends Component {
       }
     }
 
-    async componentDidMount(){
-      let url = "https://newsapi.org/v2/top-headlines?country=in&apiKey=7a1ec55b18a14db79bc3ee6aa0264a70";
-      let data = await fetch(url);
-      let ParseData = await data.json()
-      this.setState({articles : ParseData.articles})
-    }
+    // async componentDidMount(){
+    //   let url = "https://newsapi.org/v2/top-headlines?country=in&apiKey=7a1ec55b18a14db79bc3ee6aa0264a70";
+    //   let data = await fetch(url);
+    //   let ParseData = await data.json()
+    //   this.setState({articles : ParseData.articles})
+    // }
 
   render() {
 
