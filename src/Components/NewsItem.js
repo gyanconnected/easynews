@@ -9,10 +9,11 @@ export default class NewsItem extends Component {
       <div className="my-3">
       
         <div className="card" style={{width: "18rem"}}>
+        <div>
+        <span className="badge rounded-pill bg-danger" style={{display:"flex",justifyContent:"flex-end", position:"absolute",right:"0"}}>{name}</span>
+  </div>
         <img src={imageUrl} className="card-img-top" alt="..."/>
-        <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style={{left:"210px", top:"-15px"}}>
-    <span className="visually-hidden">{name}</span>
-  </span>
+        
         <div className="card-body">
           
           <h5 className="card-title">{title}</h5>
